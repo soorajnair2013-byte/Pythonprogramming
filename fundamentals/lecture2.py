@@ -67,3 +67,15 @@ elif score>=70:
 elif score>=60:
     print("fail")
 
+
+
+salary=int(input("enter your salary:"))
+if salary>50000:
+    print(float(salary*0.20))
+elif salary>30000:
+    print(float(salary*0.10))
+elif salary>10000:
+    print(float(salary*0.05))
+elif salary<=10000:
+    print(float(salary*0.03))
+
