@@ -35,3 +35,4 @@ d2
 c=tuple(i for i in range(1,10))
 print(c)
 
+
