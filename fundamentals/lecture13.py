@@ -59,28 +59,35 @@ obj1.credit(5000)
 #inheritance
 
 class animal:
-  def ___init__(self,eyes,legs,ears)
+  def ___init__(self,eyes,legs,ears):
     self.eyes=eyes
     self.legs=legs
     self.ears=ears
 
 class dog(animal):
-  def __init__(self,height,size):
-    super().__init__(eyes,legs,ears):
+  def __init__(self,eyes,legs,ears,height,size):
+    super().__init__(eyes,legs,ears)
     
     self.height=height
     self.size=size
 
 class cat(animal):
-  def __init__(self,height,size):
-    super().__init__(eyes,legs,ears):
-  
+  def __init__(self,eyes,legs,ears,height,size):
+    super().__init__(eyes,legs,ears)
+    
     
     self.height=height
     self.size=size
 
-obj.dog(1,2,3,4,5,)   
-obj.cat(1,2,3,4,5,)
+obj=animal(2,4,2)
+obj1=dog(2,4,2,23,25)   
+
+print
+
+
+
+
+
 
 
 
