@@ -44,7 +44,7 @@ b.mode generally used for categorical columns
 '''for outliers use z test,
 '''
 '''
-when mean=median then such distribution is called norammly distributed dataclass_transformthis distribution is also called symmetric distribution 
+when mean=median then such distribution is called norammly distributed dataclass_transform this distribution is also called symmetric distribution 
 '''
 '''
 note2: mean>median then such distribution is called positively skewed data
