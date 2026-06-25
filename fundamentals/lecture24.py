@@ -3,7 +3,7 @@ random forest algorithm
 100 trees 
 
 binoamial distribution
-binomial distribution is the probbaility distribution for the number of success in a sequence of bernoulli trails
+binomial distribution is the probaility distribution for the number of success in a sequence of bernoulli trails
 
 eg. person tossing a coin
 the event to occur head p=0.5 i.e success
