@@ -47,6 +47,7 @@ report
 
 
 
+
 df = pd.DataFrame({
     'Name':['A','B','C',np.nan,'E',np.nan],
     'Department':['HR','IT','SALES','HR',np.nan,np.nan],
@@ -123,6 +124,16 @@ for i in df.select_dtypes(exclude='object'):
   report=pd.DataFrame(stats)
 report
 
+df['Salary']=df['Salary'].fillna(df['Salary'].median())
+
+df['Age']=df['Age'].fillna(df['Age'].median())
+
+df['Experience']=df['Experience'].fillna(df['Experience'].median())
+
+df['Performance_Rating']=df['Performance_Rating'].fillna(df['Performance_Rating'].median())
+
+df
+
 stats_cat=[]
 for i in df.select_dtypes(include='object'):
   categorical_stat=OrderedDict({
@@ -137,3 +148,8 @@ for i in df.select_dtypes(include='object'):
   cat_report=pd.DataFrame(stats_cat)
 
 cat_report
+
+df['Department']=df['Department'].fillna(df['Department'].mode()[0])
+
+df
+
