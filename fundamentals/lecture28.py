@@ -123,17 +123,17 @@ for i in df.select_dtypes(exclude='object'):
   report=pd.DataFrame(stats)
 report
 
+stats_cat=[]
+for i in df.select_dtypes(include='object'):
+  categorical_stat=OrderedDict({
+    'Feature':i,
+    'Count':df[i].count(),
+    'Mode':df[i].mode()[0],
+    'Null val Count':df[i].isnull().sum()
+    
 
-for k in df.select_dtypes(include='object'):
-  print(k)
-  categorical_stats=OrderedDict({
-      'Feature':k,
-      'Count':df[k].count(),
-      'Mode':df[k].mode()[0]
   })
-  stats.append(categorical_stats)
-  rep=pd.DataFrame(stats)
-rep
+  stats_cat.append(categorical_stat)
+  cat_report=pd.DataFrame(stats_cat)
 
-
-
+cat_report
