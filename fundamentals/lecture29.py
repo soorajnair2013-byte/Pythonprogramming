@@ -85,4 +85,21 @@ south_hampton['Pclass'].value_counts()
 
 
 
+south_hampton=df[df['Embarked']=='S']
 
+cat=south_hampton['Sex'].value_counts().plot(
+    kind='pie',
+    autopct='%0.2f',
+    explode=[0.01, 0.01,]
+)
+print('cat')
+
+quint=df[df['Embarked']=='Q']
+
+cat1=quint['Sex'].value_counts().plot(
+    kind='pie',
+    autopct='%0.2f',
+    explode=[0.01, 0.01,]
+)
+
+print('cat1')
