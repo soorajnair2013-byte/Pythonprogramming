@@ -2,7 +2,7 @@
 
 # p-probabilty value  succes+fail=1
 
-# z=(x-u)/(std variation/sqrt(n)
+# z=(x-u)/(std variation/sqrt(n))
 
 # when std deviation is unknow go with t test
 
